@@ -38,7 +38,7 @@ export class Field extends Component {
     if(['jsonTemplate'].includes(this.props.type)) {
       return <FieldArray name={this.props.name} component={this.renderArrayGroup.bind(this)} {...this.props} />
     }
-    return <ReduxField component={this.renderFieldGroup.bind(this)} {...this.props} />;
+    return <ReduxField component={this.renderFieldGroup} {...this.props} />;
   }
 
   renderFieldGroup({ input, name, type, label, placeholder, onClick, disabled, className, meta: { touched, error, form }, config={}, ...other }) {

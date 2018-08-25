@@ -1,8 +1,8 @@
 @import '../../Main/variables';
 
 .page-login, .page-login>.row, .page-login>.row>*, .pl-left {height:100%;}
-.page-login {padding: 0 200px 0 0;overflow: hidden;}
-.page-login>.row {}
+.page-login {overflow: hidden;}
+.page-login>.row {display: flex; justify-content: center;}
 .page-login .pl-left {text-align:center;position:relative;display:flex;align-items:center;width:100%;}
 .page-login .pl-left>div {margin-top:-170px;width:100%;}
 .page-login .pl-left h1 {position: relative;color: #fff;}
@@ -23,14 +23,14 @@
 .security-box.sb-login .fg-error {display:none;}
 .security-box button {background: $green;border: 1px solid $green;padding: 3px 0 0;line-height: 42px;height: 46px;display: block;width: 100%;border-radius: 23px;color: #fff;text-transform: uppercase;letter-spacing: 4px;margin-top: 50px;}
 .security-box button:hover {background:lighten($green, 50%);color:$green;font-weight: 400;}
-.security-box input {border-radius: 23px;height: 46px;padding: 2px 46px 0 18px;font-size: 16px;}
+.security-box input {border-radius: 23px;height: 46px;padding: 2px 46px 0 18px;font-size: 16px; margin-top: 10px;}
 .security-box input:-webkit-autofill {-webkit-box-shadow: inset 0 0 0px 9999px white;}
 .security-box .field-group.fg-invalid.fg-touched input {border-color:$red;}
 .security-box .field-group.fg-invalid.fg-touched>div:after {color:$red;}
 .security-box .security-message-error {height: 20px;margin-bottom: -30px;margin-top: 10px;color: $red;}
 .security-box .login-meta {margin-top: 40px;}
 .security-box .login-meta a {color: #9ec023;}
-.security-box .login-meta div {margin-top: 10px;}
+.security-box .login-meta div {margin-top: 10px; color: white;}
 .security-box .login-meta a:last-child {text-transform: uppercase;}
 
 
@@ -47,7 +47,7 @@
   .page-login .pl-right {background: #1D073E url('assets/login-bg.svg') no-repeat top center;background-size: 800px;}
   .security-box .login-meta {font-size: 110%;line-height: 150%;}
   .security-box .login-meta div {color:#fff;}
-  .security-box input {border-color: transparent;}
+  .security-box input {border-color: transparent; margin-top: 10px;}
   .security-box img {margin: 40px 0;}
   .toastr {display: none;}
 }

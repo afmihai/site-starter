@@ -28,7 +28,7 @@ export default class HeaderComponent extends Component {
     ];
 
     return (
-      <div>
+      <div className="panel-container">
 
         <section className="header-top">
           <div className="container">
@@ -42,8 +42,8 @@ export default class HeaderComponent extends Component {
         </section>
 
         <section className="header-navigation">
-          <div className="container">
-            <Navigation links={mainMenu} />
+          <div className="panel">
+            <Navigation className="element" links={mainMenu} />
           </div>
         </section>
 

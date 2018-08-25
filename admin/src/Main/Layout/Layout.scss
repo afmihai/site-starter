@@ -43,3 +43,8 @@ body {
 .highlighted {
   background: #FFEB3B;
 }
+
+.side {
+  display: flex;
+  justify-content: flex-start;
+}

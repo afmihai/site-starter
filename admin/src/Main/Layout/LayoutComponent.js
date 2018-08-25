@@ -8,12 +8,14 @@ export default class LayoutComponent extends Component {
   render() {
     return (
       <div className="layout">
-        <Header />
-        {/* <Breadcrumbs routes={this.props.routes} className="container breadcrumbs" /> */}
-        <div className="container">
-          <div className="layout__content">{this.props.children}</div>
-        </div>
-        <Footer />
+          <div className="side">
+              <Header />
+              {/* <Breadcrumbs routes={this.props.routes} className="container breadcrumbs" /> */}
+              <div className="container">
+                  <div className="layout__content">{this.props.children}</div>
+              </div>
+          </div>
+          <Footer />
       </div>
     );
   }

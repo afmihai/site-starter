@@ -34,8 +34,8 @@ class LoginComponent extends Component {
 
         <div className="security-box sb-login">
           <img src={require('../assets/login-user.svg')} />
-          <form onSubmit={handleSubmit(this.props.doLogin.bind(this))}>
-            <Field name="username" placeholder={I18n.t('login.placeholder.email')} autoCapitalize="off" autoCorrect="off" />
+          <form onSubmit={handleSubmit(this.props.doLogin)}>
+            <Field name="username" type="text" placeholder={I18n.t('login.placeholder.email')} autoCapitalize="off" autoCorrect="off"/>
             <Field type="password" name="password" placeholder={I18n.t('login.placeholder.password')} />
             { message && message.type=='error' && <div className="security-message-error">{I18n.t(message.t)}</div> }
             <SubmitButton loading={loading}>{I18n.t('button.login')}</SubmitButton>

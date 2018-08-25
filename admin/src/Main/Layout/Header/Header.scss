@@ -4,7 +4,6 @@
   color: #fff;
   margin: 30px 0;
   .container {
-    display: flex;
     align-items: center;
   }
   .logo {
@@ -15,8 +14,9 @@
 
 .header-navigation {
   .navigation {
-    display: flex;
+    display: block;
     li {
+      display: block;
       position: relative;
       &:not(:last-child) {
         margin-right: 3px;
@@ -33,4 +33,17 @@
       }
     }
   }
+}
+
+.panel {
+  display: flex;
+}
+
+.element {
+  display: block;
+}
+
+.panel-container {
+  display: block;
+  width: 30%;
 }
